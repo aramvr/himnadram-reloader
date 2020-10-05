@@ -40,10 +40,6 @@ function init(){
         localStorage.setItem('fund', getFund());
     }
     else {
-        console.log({
-            fund: toNumber(getFund()),
-            local: toNumber(localStorage.getItem('fund')),
-        });
         appendDifference((toNumber(getFund()) - toNumber(localStorage.getItem('fund'))));
         localStorage.setItem('fund', getFund());
     }
