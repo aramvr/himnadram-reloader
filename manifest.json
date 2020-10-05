@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Himnadram Funds",
+  "version": "0.1",
+  "author": "Aram Vardanyan",
+  "description": "Himnadram funds update",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.himnadram.org/en"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "index.html",
+    "default_title": "Himnadram Funds Update"
+  }
+}
